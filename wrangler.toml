@@ -1,0 +1,13 @@
+name = "nextgentechbd"
+pages_build_output_dir = "public"
+compatibility_date = "2026-08-01"
+
+# D1 ডেটাবেজ বাইন্ডিং — Cloudflare-এ D1 ডেটাবেজ তৈরি করার পর database_id বসিয়ে দিন
+# (Cloudflare Pages ড্যাশবোর্ড থেকেও এই বাইন্ডিং যোগ করা যায় — DEPLOY-GUIDE.md দেখুন)
+[[d1_databases]]
+binding = "DB"
+database_name = "nextgentechbd-db"
+database_id = "a633667d-b696-4ee2-ab26-f003ceb342b2"
+
+# পণ্যের ছবি আপলোডের জন্য কোনো বাইন্ডিং লাগে না — ছবি Cloudinary-তে (ফ্রি, কার্ড লাগে না) আপলোড হয়।
+# শুধু CLOUDINARY_CLOUD_NAME, CLOUDINARY_API_KEY, CLOUDINARY_API_SECRET Environment Variables Cloudflare Pages ড্যাশবোর্ডে সেট করলেই হবে — DEPLOY-GUIDE.md দেখুন।
